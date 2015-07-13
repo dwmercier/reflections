@@ -1,0 +1,13 @@
+###
+What happens when you initialize a repository? Why do you need to do it?
+
+When you initialize a repository its contents are tracked by version control. This doesn't actually create an initial commit however, you still need to do the first commit yourself.
+If you don't initialize a repository, its contents are no different than that of a normal directory - nothing will be tracked.
+
+
+
+###
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+The working directory is where the repository's files are. The staging area is where you decide what to do with the files in the working directory before you make a commit.
+The staging area allows you to make decisions before you finalize them - you can make decisions one file at a time before you go ahead and commit.
