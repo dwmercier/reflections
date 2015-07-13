@@ -11,3 +11,9 @@ How is the staging area different from the working directory and the repository?
 
 The working directory is where the repository's files are. The staging area is where you decide what to do with the files in the working directory before you make a commit.
 The staging area allows you to make decisions before you finalize them - you can make decisions one file at a time before you go ahead and commit.
+
+
+
+###
+How can you use the staging area to make sure you have one commit per logical change?
+You can compare the staging area to the last commit (using git diff --staged). You can also compare changes in the working directory to the staging area to make sure all the appropriate changes have been staged for the next commit.
