@@ -1,0 +1,63 @@
+###
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+Performing the diff showed only the parts of the file that changed between versions. This significantly reduced the amount of code I had to check through to find the bug, and made finding it relatively painless.
+
+
+
+###
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+I think there many benefits to being able to access the entire history of a file makes you more efficient; I'll list the first few that came to mind. 
+
+1) You can quickly revert to a previous version of a file if you make a serious mistake, and by comparing the difference between versions, figure out where things went wrong.
+2) Your project's structure will be better organized.
+3) By viewing your code changes over time, you can get a better idea of your problem-solving methodology and how you can improve it.
+
+
+
+###
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+
+Pros
+----
+1) You can make sure that your commits contain a logically meaningful change to your code.
+2) Your commits don't occur at random time or line intervals, which should help make sure your code can compile at every commit.
+3) You can include a description of what changes you made in your commit.
+4) Allows others to easily understand what changes you made to code.
+
+Cons
+----
+1) If you don't have a good commit system in practice, you can easily forget to commit many changes. This can lead to commits with substantial code changes that are difficult to track and revert.
+2) You don't have an automatic backup available if something crashes.
+3) It adds extra steps to your workflow and may slow you down if you're not used to it.
+
+
+
+###
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+Each system has a different purpose. Git seems designed around intentional commits done for specific logical changes to code. A single logical change can involve multiple files, so saving them all in each commit is important. Version control systems that treat each file separately seem designed for automatic saving as a backup mechanism in case a file is accidentally deleted or damaged.
+
+
+
+###
+How can you use the commands git log and git diff to view the history of files?
+
+1) Enter 'git log' to show file history.  This will give you a history of all the commits, each of which will display a description of the changes made and a unique commit ID string.  'git log --stat' will show you more detailed information about each commit, including the number of deletions and insertions and the overall number of changes.
+
+2) Git diff allows you to view the differences in files between two commits. To view the difference between two particular commits you need to enter 'git diff ' followed by the commit IDs of the commits whose differences you want to see.
+
+
+
+###
+How might using version control make you more confident to make changes that could break something?
+
+With version control you can revert to a known working version of your code that you've committed at any time. You can make changes and test them locally before committing, and if you do commit a change that happens to break something, you can quickly find out what version that change was made in as well as the change itself.
+
+
+
+###
+Now that you have your workspace set up, what do you want to try using Git for?
+
+I'd like to use it for some programming and data science coursework as well as a few personal projects.
