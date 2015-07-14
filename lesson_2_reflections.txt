@@ -16,4 +16,13 @@ The staging area allows you to make decisions before you finalize them - you can
 
 ###
 How can you use the staging area to make sure you have one commit per logical change?
+
 You can compare the staging area to the last commit (using git diff --staged). You can also compare changes in the working directory to the staging area to make sure all the appropriate changes have been staged for the next commit.
+
+
+
+###
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+Branches would be helpful when you are developing new experimental features that aren't ready to be added to the main codebase yet. You could keep a working version of the main program in the master branch, work on the feature in an experimental branch, and then merge the experimental branch into the master when you're sure the feature works. if there are bug fixes in the master branch you can add them to the experimental branch as well. Different versions of the same software would also be a situation where branching is ideal. Perhaps you have versions customized for different clients or markets for example.
+
