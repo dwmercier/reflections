@@ -36,8 +36,20 @@ How do the diagrams help you visualize the branch structure?
 The diagrams help show how commits are connected to each other. Once you make a new branch and switch to it, commits quite literally branch into different paths. Future commits on each branch only connect to the last commit on their branch, with no awareness or connection to commits on any other branches. 
 Diagramming the branches help you see this property in a way that maps closely to that of actual physical tree branches.
 
+
+
 ###
 What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
 
 When two branches are merged, the commits of each branch are combined into one of the branches (almost always into the master.) Commits are re-ordered on the combined branch by their timestamps.
 It's represented on the diagram as having two parent commits - the last commits on each of the merged branches. This is to illustrate that the history of the original branches is still maintained, even though both branches are now part of a single branch (I think this is why, but not totally sure)
+
+
+
+###
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+It comes down to a tradeoff between convenience and accuracy. Merging manually ensures that our conflicts are always merged properly, but it requires a larger up-front commitment of effort and time. 
+If we left merging completely to Git, there's less for us to do and think about, but we might wind up with a lot of non-functional conflicting code after a merge. Clearing up these conflicts might require even more effort in the end than if we'd just made our commits manually to begin with.
+
+
