@@ -28,3 +28,13 @@ You would branch when you're making changes that aren't ready for the master bra
 What is the benefit of having a copy of the last known state of the remote stored locally?
 
 The benefit is that you can see what changes others have made before you push your own changes. This lets you work on merging your changes with that of the remote even without a connection to the internet.
+
+
+
+###
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+If you weren't using a platform like GitHub to collaborate, you could still keep everyone working on the same project files by hosting the project over sftp, but you'd have to have only one person editing a project file at a time. Alternately, you could allow everyone to keep their own version of each project file and then merge the changes at set intervals or when problems arise.
+Collaborating without Git or GitHub is very possible (people have been programming well before Git existed), but the workflow for doing so is probably a lot less smooth, and people are much more likely to waste time making changes that aren't necessary.
+For a single person working on a small project, or for a very small team that knows each other well, working without Git might reduce some of the overhead inherent in using it.
+For all other situations it seems that using Git would make work easier over the long term.
