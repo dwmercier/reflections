@@ -21,3 +21,10 @@ A branch is a series of commits that is separate from the master of a repository
 You would fork when you want to make changes to the contents of an online repository that you don't have permission to change directly. 
 You would clone when you simply want a copy of a local repository or an online repository that you have permission to change.
 You would branch when you're making changes that aren't ready for the master branch of a repository you're working in.
+
+
+
+###
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+The benefit is that you can see what changes others have made before you push your own changes. This lets you work on merging your changes with that of the remote even without a connection to the internet.
